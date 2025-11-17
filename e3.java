@@ -1,23 +1,14 @@
-package Day3programs;
-//class counter with a static variable count.
+package Day4Programs;
 
-class counter
-{
-	static int count = 0;
-	counter()
-	{
-		count ++;
-		//System.out.println("Count: " + count);
-	}
-	System.out.println("Count: " + count);
-}
+import java.util.Scanner;
+
+//read a password from the user and displays an error message if the length is < 8 characters.
 public class e3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		new counter();
-		new counter();
-		new counter();
+		Scanner sc = new Scanner(System.in);
+
 	}
 
 }

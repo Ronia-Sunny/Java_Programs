@@ -1,39 +1,31 @@
-package Day3programs;
-//create class BankAccount with methods deposit() withdraw().
-//subclass SavingsAccount that overrides the withdraw() method to prevent withdrawals
-//if the account balance falls below one hundred
+package Day4Programs;
 
-class  BankAccount
-{
-	void deposit()
-	{
-		int amount = 10000;
-		System.out.println("Deposit Amount " + amount);
-	}
-	
-	void withdraw()
-	{
-		int wamount = 5000;
-		System.out.println("Withdrawal amount " + wamount);
-	}
-}
+import java.util.Scanner;
 
-class SavingsAccount extends BankAccount
-{
-	void withdraw()
-	{
-		
-		System.out.println("Account balance below hundred");
-	}
-}
-
+//read a list of numbers from a user and throws an exception if any numbers are negative
 public class e1 {
 
-	public static void main(String[] args) {
-		BankAccount obj = new BankAccount();
-		obj.deposit();
-		obj.withdraw();
-
+	public static void main(String[] args) throws myexception
+	{
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int[] n = new int[5];
+		System.out.println("Enter numbers: ");
+		int n1 = sc.nextInt();
+		if(n1 < 0 )
+		{
+			throw new myexception("Number cannot be negative");
+		}
+		else
+		{
+			System.out.println("Numbers are valid");
+		}
+		System.out.println("Rest of the code");
 	}
+
+	//static Exception newexception(String string) {
+		// TODO Auto-generated method stub
+		//return null;
+	//}
 
 }
