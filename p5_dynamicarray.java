@@ -1,6 +1,6 @@
 package Day2Programs;
-//use binary search find the specific element exists or not
-public class e17 {
+
+public class p5_dynamicarray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

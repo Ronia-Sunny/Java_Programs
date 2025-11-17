@@ -1,27 +1,44 @@
-import java.io.*;
+package Day2Programs;
 
-public class e14 
-{
+import java.util.Scanner;
 
-	public static boolean isPalindrome(String s) {
+//array size to be user input and print it
+//enter array limit 4
+//element of...same as previous10,20,30,40
+//display array elements
+//10
+//20
+//30
+//40
+
+public class e14 {
+
+	public static void main(String[] args) 
+	{
+		int size;
+		System.out.println("Enter array limit: ");
+		Scanner sc = new Scanner(System.in);
+		size = sc.nextInt();
+		int a[] = new int[size];
 		
-		        s = s.toLowerCase();
-		        String rev = "";
-		        for (int i = s.length() - 1; i >= 0; i--) {
-		            rev = rev + s.charAt(i);
-		        }
-		        
-		        return s.equals(rev);
-		    }
+		
 
-		    public static void main(String[] args) {
 		        
-		        String s = "level";
-		        boolean res = isPalindrome(s);
-		        if (res) {
-		            System.out.println('"' + s + '"' + " is a palindrome.");
-		        } else {
-		            System.out.println('"' + s + '"' + " is not a palindrome.");
+		        for (int i = 0; i < size; i++) {
+		            System.out.print("Enter element " + (i + 1) + ": ");
+		            a[i] = sc.nextInt(); 
 		        }
+
+		        
+		        System.out.println("\nArray elements:");
+		        for (int element : a) { 
+		            System.out.print(element + " ");
 		        }
+		        System.out.println();
+
+		        
 		    }
+		}
+	
+
+

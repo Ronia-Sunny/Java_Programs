@@ -1,6 +1,6 @@
 package Day2Programs;
-//use binary search find the specific element exists or not
-public class e17 {
+//passing arguments in an array
+public class p6_passingargsarray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -1,10 +1,10 @@
 package Day2Programs;
-//use binary search find the specific element exists or not
-public class e17 {
+
+public class e26 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		// remove a specified character from string
 	}
 
 }
